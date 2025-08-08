@@ -29,43 +29,42 @@ Nel subfolder `ESEMPIO_Assegnazione_condizioni_partecipanti/` è disponibile un 
 
 Per Excel/LibreOffice:
 ```excel
-=CONCATENA("https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c=";F2;"&p=";E2;"&redirect=https%3A//tuodominio.qualtrics.com/jfe/form/SV_TUOCODICE")
+=CONCATENA("https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c=";F2;"&p=";E2;"&redirect=[URL_QUESTIONARIO_CODIFICATO]")
 ```
 
 Per Google Sheets:
 ```
-="https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c="&F2&"&p="&E2&"&redirect=https%3A//tuodominio.qualtrics.com/jfe/form/SV_TUOCODICE"
+="https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c="&F2&"&p="&E2&"&redirect=[URL_QUESTIONARIO_CODIFICATO]"
 ```
 
 **Dove:**
 * `F2` = Cella della Condizione (colonna F)
 * `E2` = Cella dell'ID (colonna E)
-* `https%3A//tuodominio.qualtrics.com/jfe/form/SV_TUOCODICE` = Il tuo URL Qualtrics già codificato
+* `[URL_QUESTIONARIO_CODIFICATO]` = Il tuo URL del questionario già codificato
 
 ## 🔐 Come Preparare l'URL Codificato
 
-1. **Prendi il tuo link Qualtrics:**
+1. **Prendi il tuo link del questionario:**
    ```
-   https://tuodominio.qualtrics.com/jfe/form/SV_TUOCODICE
+   https://tuapiattaforma.com/survey/SV_CODICE
    ```
 
 2. **Codificalo usando un tool online:** 
    ```
-   https%3A//tuodominio.qualtrics.com/jfe/form/SV_TUOCODICE
+   https%3A//tuapiattaforma.com/survey/SV_CODICE
    ```
 
-3. **Sostituisci nella formula** al posto di `https%3A//tuodominio.qualtrics.com/jfe/form/SV_TUOCODICE`
+3. **Sostituisci nella formula** al posto di `[URL_QUESTIONARIO_CODIFICATO]`
 
 ## 📊 Esempio di Dati
 
-### Esempio con URL Completo
+### Esempio con Placeholder
 
 | Nome | Cognome | Data_Nascita | Sesso | ID | Condizione | Link_Partecipazione |
 |------|---------|--------------|-------|----|-----------|--------------------|
-| Marco | Rossi | 1995-03-15 | M | 1 | 1 | https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c=1&p=1&redirect=https%3A//tuodominio.qualtrics.com/jfe/form/SV_TUOCODICE |
-| Giulia | Bianchi | 1997-07-22 | F | 2 | 2 | https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c=2&p=2&redirect=https%3A//tuodominio.qualtrics.com/jfe/form/SV_TUOCODICE |
-| Alessandro | Verdi | 1993-11-08 | M | 3 | 3 | https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c=3&p=3&redirect=https%3A//tuodominio.qualtrics.com/jfe/form/SV_TUOCODICE |
-| Sofia | Romano | 1996-09-12 | F | 4 | 1 | https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c=1&p=4&redirect=https%3A//tuodominio.qualtrics.com/jfe/form/SV_TUOCODICE |
+| Marco | Rossi | 1995-03-15 | M | 1 | 1 | https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c=1&p=1&redirect=[URL_QUESTIONARIO_CODIFICATO] |
+| Giulia | Bianchi | 1997-07-22 | F | 2 | 2 | https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c=2&p=2&redirect=[URL_QUESTIONARIO_CODIFICATO] |
+| Alessandro | Verdi | 1993-11-08 | M | 3 | 3 | https://villinodippsi.github.io/smpo-socialmedia-ita/index.html?c=3&p=3&redirect=[URL_QUESTIONARIO_CODIFICATO] |
 
 ## 💡 Utilizzo
 
